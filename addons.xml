@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.animaniac" name="Animaniac Repository" version="0.1" provider-name="Jax">
+<addon id="repository.animaniac" name="Animaniac Repository" version="1.0" provider-name="Jax">
 <extension point="xbmc.addon.repository" name="Animaniac Repository">
     <dir>
         <info compressed="false">https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml</info>
         <checksum>https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml.md5</checksum>
         <datadir zip="true">https://github.com/OldManJax/repository.animaniac/raw/master/</datadir>
     </dir>  
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
 </extension>
 <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -19,8 +24,33 @@
     </assets>
 </extension>
 </addon>
+         
+<addon id="plugin.video.kimcartoon" name="KimCartoon" version="0.6" provider-name="mbebe">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.six"/>
+        <import addon="script.module.pycryptodome"/>
+        <import addon="script.module.pyjsparser" version="3.0.0"/>
+        <import addon="script.module.js2py" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">kimcartoon</description>
+        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>    
+        <summary lang="en">Watch cartoons</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/mbebe/blomqvist</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
     
-<!-- Pokemon TV -->    
 <addon id="plugin.video.pokemon-tv" name="Pokémon TV" version="0.1.1" provider-name="SyrupThinker, Contributors">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -58,8 +88,7 @@
     </assets>
   </extension>
 </addon>
-
-<!-- GoGo Anime --> 
+     
 <addon id="plugin.video.gogoanimes" name="GOGO Anime" version="1.0.1" provider-name="GoGo">
     <requires>
         <import addon="script.module.beautifulsoup4" version="4.8.2"/>
@@ -87,6 +116,32 @@
     </extension>
 </addon>
     
+<addon id="plugin.video.southpark_unofficial" name="South Park" version="0.6.6+matrix.1" provider-name="Deroad">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">South Park Unofficial Player</summary>
+        <language>en</language>
+        <description lang="en">Watch South Park episodes from supported countries.[CR]The supported countries are the ones that can view at least one of these websites:[CR] https://southpark.cc.com[CR] https://southparkstudios.co.uk[CR] https://southparkstudios.nu[CR] https://www.southpark.de[CR] https://www.southpark.lat[CR] https://www.southparkstudios.com.br.</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+        <license>GPL-2.0</license>
+        <source>https://github.com/wargio/plugin.video.southpark_unofficial</source>
+        <forum>https://forum.kodi.tv/showthread.php?tid=224662</forum>
+        <email>wargio at libero dot it</email>
+        <website>https://southpark.cc.com</website>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+    
 <addon id="script.module.reroutingpy3" name="reroutingpy3" version="0.1.2" provider-name="fredrik-sy">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -98,6 +153,44 @@
         <license>MIT License</license>
         <source>https://github.com/fredrik-sy/script.module.rerouting</source>
     </extension>
+</addon>
+    
+<addon id="script.module.js2py" name="js2py" version="3.0.0" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="script.module.six" version="1.15.0"/>
+    <import addon="script.module.pyjsparser" version="3.0.0"/>
+    <import addon="script.module.tzlocal" version="2.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email></email>
+  </extension>
+</addon>
+    
+<addon id="script.module.pyjsparser" name="pyjsparser" version="3.0.0" provider-name="Addons4Kodi">
+  <requires>
+    <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email></email>
+  </extension>
 </addon>
     
 <!-- Toonami --> 
@@ -125,8 +218,7 @@
     </assets>
   </extension>
 </addon>
-    
-<!-- FanimeF -->     
+        
 <addon id="plugin.video.fanimef" name="Fanime F" version="1.0.4" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
@@ -148,6 +240,59 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+    
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.3" provider-name="WNT2">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WatchNixtoons2</summary>
+        <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.net[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on originally by doko.
+Random updates by lolage.
+        </description>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+        <language>en</language>
+        <platform lang="en">all</platform>
+        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.3:[/B]
+- Add option to play 1080p quality if available
+- Update User Agent
+- Update Thumbnail Hashes
+
+[B]0.12.2:[/B]
+- Change wcofun.tv domain to wcofun.net
+- Update Thumbnail Hashes
+- Fix getting plot (wcostream)
+- Change how chapters are retrieved
+
+[B]0.12.1:[/B]
+- Update User Agent
+- Update Thumbnail Hashes
+
+[B]0.12.0:[/B]
+- Code clean-up and restructure
+- allow for different site profiles
+- add wcostream.tv domain as option
+- add premium video work around for wcostream
+- modify resolver for wcostream
+- change default setting form popular thumbnails to true
+- Update User Agent
+- Update Thumbnail Hashes</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
     
 </addons>
