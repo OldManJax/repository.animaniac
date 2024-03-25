@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="repository.animaniac" name="Animaniac Repository" version="0.1" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="Animaniac Repository">
+    <dir>
+        <info compressed="false">https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml</info>
+        <checksum>https://github.com/OldManJax/repository.animaniac/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/OldManJax/repository.animaniac/raw/master/</datadir>
+    </dir>  
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Cartoons and Anime</summary>
+    <description>Cartoon and Anime, TV and Movies. Parental Guidence suggested as some content may be more oriented to a mature audience.</description>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</extension>
+</addon>
+    
+<!-- Pokemon TV -->    
+<addon id="plugin.video.pokemon-tv" name="Pokémon TV" version="0.1.1" provider-name="SyrupThinker, Contributors">
+  <requires>
+    <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+    <import addon="script.common.plugin.cache" version="2.6.1"/>
+	<import addon="script.module.six"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Watch Pokémon TV</summary>
+    <description lang="en_GB">
+      This addon allows you watch Pokémon TV with Kodi. It uses the offical API https://www.pokemon.com/api/pokemontv/v2/channels/us/ as used by https://watch.pokemon.com .
+      
+      You can configure the stream quality and language in the addons settings.
+    </description>
+    <disclaimer lang="en_GB">
+      Pokémon is a trademark owned by Nintendo, Creatures Inc. and Game Freak.
+      All content is owned by The Pokémon Company International.
+
+      This addon utilizes services provided under the terms-of-use found at
+      https://www.pokemon.com/us/terms-of-use/ .
+      The applicable TOS may vary based on your location.
+    </disclaimer>
+    <language>el dk es fi fr de it nl no br ru se uk us</language>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <source>https://github.com/SyrupThinker/kodi-pokemon-tv/</source>
+    <news>v0.1.0 (2020-03-22)
+    Initial version.
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart> 
+    </assets>
+  </extension>
+</addon>
+
+<!-- GoGo Anime --> 
+<addon id="plugin.video.gogoanimes" name="GOGO Anime" version="1.0.1" provider-name="GoGo">
+    <requires>
+        <import addon="script.module.beautifulsoup4" version="4.8.2"/>
+        <import addon="script.module.pycryptodome" version="3.4.3"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.reroutingpy3" version="0.1.2"/>
+        <import addon="script.module.resolveurl" version="5.1.18"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Watch GoGoAnime on KODI</summary>
+        <description lang="en_GB">This add-on is a fork of cywteow's GoGoAnime add-on. All credit goes to cywteow for the original code. This is simply a small update of that add-on to fix a few issues.</description>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>All content from on the gogoanime website</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+    
+<addon id="script.module.reroutingpy3" name="reroutingpy3" version="0.1.2" provider-name="fredrik-sy">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language>en</language>
+        <platform>all</platform>
+        <license>MIT License</license>
+        <source>https://github.com/fredrik-sy/script.module.rerouting</source>
+    </extension>
+</addon>
+    
+<!-- Toonami --> 
+<addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
+  <requires>
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<news>
+[B]1.0.3:[/B]
+- Fix Streams again
+
+[B]1.0.2:[/B]
+- Change how the video is retrieved to fix PST stream</news>
+    <summary lang="en">Toonami Aftermath TV for Kodi</summary>
+    <description lang="en">Non-stop classic television programming featuring Toonami, Cartoon Cartoons and more!</description>
+    <disclaimer lang="en">A non-profit fan broadcast. No affiliation with cartoon network.</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+    
+<!-- FanimeF -->     
+<addon id="plugin.video.fanimef" name="Fanime F" version="1.0.4" provider-name="fanimef">
+  <requires>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fanatic Anime Fan</summary>
+    <description lang="en">This add-on is a fork of FANime. All credit goes to @Nemzzy668 for the original coding. As a fan of Anime, I believe you can't have too many Anime Add-ons.</description>
+    <disclaimer lang="en">If You Are Using This Addon To Watch Content You Legally Do Not Have The Rights To Then The Author Takes No Affiliation With This, You Do So At Your Own Judgement And Risk!</disclaimer>
+	  <platform>all</platform>
+	  <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+    
+</addons>
