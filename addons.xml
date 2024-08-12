@@ -25,32 +25,6 @@
 </extension>
 </addon>
          
-<addon id="plugin.video.kimcartoon" name="KimCartoon" version="0.6" provider-name="mbebe">
-    <requires>
-        <import addon="script.module.requests" />
-        <import addon="script.module.six"/>
-        <import addon="script.module.pycryptodome"/>
-        <import addon="script.module.pyjsparser" version="3.0.0"/>
-        <import addon="script.module.js2py" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description lang="en">kimcartoon</description>
-        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>    
-        <summary lang="en">Watch cartoons</summary>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://github.com/mbebe/blomqvist</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-    
 <addon id="plugin.video.pokemon-tv" name="Pokémon TV" version="0.1.1" provider-name="SyrupThinker, Contributors">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -242,7 +216,7 @@
   </extension>
 </addon>
     
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.6" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.7" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -265,6 +239,10 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.12.7:[/B]
+- Update User Agent
+- Update Thumbnail Hashes
+
 [B]0.12.6:[/B]
 - Fix recent and page meta for wcostream
 
@@ -280,13 +258,7 @@ Random updates by lolage.
 [B]0.12.3:[/B]
 - Add option to play 1080p quality if available
 - Update User Agent
-- Update Thumbnail Hashes
-
-[B]0.12.2:[/B]
-- Change wcofun.tv domain to wcofun.net
-- Update Thumbnail Hashes
-- Fix getting plot (wcostream)
-- Change how chapters are retrieved</news>
+- Update Thumbnail Hashes</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
