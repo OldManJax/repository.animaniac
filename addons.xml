@@ -216,10 +216,11 @@
   </extension>
 </addon>
     
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.0~beta" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.0~beta2" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
+        <import addon="inputstream.adaptive"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
