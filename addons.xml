@@ -24,45 +24,8 @@
     </assets>
 </extension>
 </addon>
-         
-<addon id="plugin.video.pokemon-tv" name="Pokémon TV" version="0.1.1" provider-name="SyrupThinker, Contributors">
-  <requires>
-    <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-    <import addon="script.common.plugin.cache" version="2.6.1"/>
-	<import addon="script.module.six"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Watch Pokémon TV</summary>
-    <description lang="en_GB">
-      This addon allows you watch Pokémon TV with Kodi. It uses the offical API https://www.pokemon.com/api/pokemontv/v2/channels/us/ as used by https://watch.pokemon.com .
-      
-      You can configure the stream quality and language in the addons settings.
-    </description>
-    <disclaimer lang="en_GB">
-      Pokémon is a trademark owned by Nintendo, Creatures Inc. and Game Freak.
-      All content is owned by The Pokémon Company International.
 
-      This addon utilizes services provided under the terms-of-use found at
-      https://www.pokemon.com/us/terms-of-use/ .
-      The applicable TOS may vary based on your location.
-    </disclaimer>
-    <language>el dk es fi fr de it nl no br ru se uk us</language>
-    <platform>all</platform>
-    <license>GPL-3.0-only</license>
-    <source>https://github.com/SyrupThinker/kodi-pokemon-tv/</source>
-    <news>v0.1.0 (2020-03-22)
-    Initial version.
-    </news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart> 
-    </assets>
-  </extension>
-</addon>
-     
+<!-- GoGo Anime -->          
 <addon id="plugin.video.gogoanimes" name="GOGO Anime" version="1.0.1" provider-name="GoGo">
     <requires>
         <import addon="script.module.beautifulsoup4" version="4.8.2"/>
@@ -89,33 +52,6 @@
         </assets>
     </extension>
 </addon>
-    
-<addon id="plugin.video.southpark_unofficial" name="South Park" version="0.6.6+matrix.1" provider-name="Deroad">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">South Park Unofficial Player</summary>
-        <language>en</language>
-        <description lang="en">Watch South Park episodes from supported countries.[CR]The supported countries are the ones that can view at least one of these websites:[CR] https://southpark.cc.com[CR] https://southparkstudios.co.uk[CR] https://southparkstudios.nu[CR] https://www.southpark.de[CR] https://www.southpark.lat[CR] https://www.southparkstudios.com.br.</description>
-        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-        <license>GPL-2.0</license>
-        <source>https://github.com/wargio/plugin.video.southpark_unofficial</source>
-        <forum>https://forum.kodi.tv/showthread.php?tid=224662</forum>
-        <email>wargio at libero dot it</email>
-        <website>https://southpark.cc.com</website>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-    
 <addon id="script.module.reroutingpy3" name="reroutingpy3" version="0.1.2" provider-name="fredrik-sy">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -127,46 +63,8 @@
         <license>MIT License</license>
         <source>https://github.com/fredrik-sy/script.module.rerouting</source>
     </extension>
-</addon>
-    
-<addon id="script.module.js2py" name="js2py" version="3.0.0" provider-name="Addons4Kodi">
-  <requires>
-    <import addon="script.module.six" version="1.15.0"/>
-    <import addon="script.module.pyjsparser" version="3.0.0"/>
-    <import addon="script.module.tzlocal" version="2.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MIT</license>
-    <forum></forum>
-    <website>https://github.com/PiotrDabkowski/Js2Py</website>
-    <source>https://github.com/PiotrDabkowski/Js2Py</source>
-    <email></email>
-  </extension>
-</addon>
-    
-<addon id="script.module.pyjsparser" name="pyjsparser" version="3.0.0" provider-name="Addons4Kodi">
-  <requires>
-    <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MIT</license>
-    <forum></forum>
-    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
-    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
-    <email></email>
-  </extension>
-</addon>
-    
+</addon>    
+
 <!-- Toonami --> 
 <addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
   <requires>
@@ -192,8 +90,9 @@
     </assets>
   </extension>
 </addon>
-        
-<addon id="plugin.video.fanimef" name="Fanime F" version="1.0.4" provider-name="fanimef">
+
+<!-- Fanime -->        
+<addon id="plugin.video.fanimef" name="Fanime F" version="1.0.5" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
     <import addon="script.module.requests" />
@@ -215,7 +114,8 @@
     </assets>
   </extension>
 </addon>
-    
+
+<!-- WatchNixToons2 -->    
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.0" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
