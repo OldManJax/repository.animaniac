@@ -25,46 +25,6 @@
 </extension>
 </addon>
 
-<!-- GoGo Anime -->          
-<addon id="plugin.video.gogoanimes" name="GOGO Anime" version="1.0.1" provider-name="GoGo">
-    <requires>
-        <import addon="script.module.beautifulsoup4" version="4.8.2"/>
-        <import addon="script.module.pycryptodome" version="3.4.3"/>
-        <import addon="script.module.requests" version="2.22.0"/>
-        <import addon="script.module.reroutingpy3" version="0.1.2"/>
-        <import addon="script.module.resolveurl" version="5.1.18"/>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Watch GoGoAnime on KODI</summary>
-        <description lang="en_GB">This add-on is a fork of cywteow's GoGoAnime add-on. All credit goes to cywteow for the original code. This is simply a small update of that add-on to fix a few issues.</description>
-        <language></language>
-        <platform>all</platform>
-        <license>GPL-3.0</license>
-        <news></news>
-        <disclaimer>All content from on the gogoanime website</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-<addon id="script.module.reroutingpy3" name="reroutingpy3" version="0.1.2" provider-name="fredrik-sy">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <language>en</language>
-        <platform>all</platform>
-        <license>MIT License</license>
-        <source>https://github.com/fredrik-sy/script.module.rerouting</source>
-    </extension>
-</addon>    
-
 <!-- Toonami --> 
 <addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
   <requires>
@@ -92,13 +52,14 @@
 </addon>
 
 <!-- Fanime -->        
-<addon id="plugin.video.fanimef" name="Fanime F" version="1.0.5" provider-name="fanimef">
+<addon id="plugin.video.fanimef" name="Fanime F" version="1.1.0" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
     <import addon="script.module.requests" />
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.resolveurl" />
     <import addon="script.module.six" />
+    <import addon="inputstream.adaptive"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="plugin.py">
     <provides>video</provides>
@@ -116,11 +77,11 @@
 </addon>
 
 <!-- WatchNixToons2 -->    
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.3" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.2" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
-        <import addon="inputstream.adaptive"/>
+        <import addon="script.module.inputstreamhelper"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -140,11 +101,6 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-
-[B]0.13.3:[/B]
-- Revert inputstream changes. Will use inputstream helper again when it is fixed on xbox
-- Update User Agent
-
 [B]0.13.2:[/B]
 - Update Thumbnail Hashes
 - Better handling of inputstream
@@ -156,7 +112,14 @@ Random updates by lolage.
 [B]0.13.0:[/B]
 - Add functionality for m3u8 videos
 - Update User Agent
-- Update Thumbnail Hashes</news>
+- Update Thumbnail Hashes
+
+[B]0.12.7:[/B]
+- Update User Agent
+- Update Thumbnail Hashes
+
+[B]0.12.6:[/B]
+- Fix recent and page meta for wcostream</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
