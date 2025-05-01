@@ -51,32 +51,8 @@
   </extension>
 </addon>
 
-<!-- Fanime -->        
-<addon id="plugin.video.fanimef" name="Fanime F" version="1.1.2" provider-name="fanimef">
-  <requires>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.six" />
-    <import addon="inputstream.adaptive"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Fanatic Anime Fan</summary>
-    <description lang="en">This add-on is a fork of FANime. All credit goes to @Nemzzy668 for the original coding. As a fan of Anime, I believe you can't have too many Anime Add-ons.</description>
-    <disclaimer lang="en">If You Are Using This Addon To Watch Content You Legally Do Not Have The Rights To Then The Author Takes No Affiliation With This, You Do So At Your Own Judgement And Risk!</disclaimer>
-	  <platform>all</platform>
-	  <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
 <!-- WatchNixToons2 -->    
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.13.3" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.0" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -100,6 +76,12 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+
+[B]0.14.0:[/B]
+- Code Tidyup
+- Separate Trakt Integration
+- Add TMDB thumbnails
+- Fix wcostream premium workaround
 
 [B]0.13.3:[/B]
 - Revert inputstream changes. Will use inputstream helper again when it is fixed on xbox
