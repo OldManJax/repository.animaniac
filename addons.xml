@@ -47,7 +47,7 @@
 </addon>
 
 <!-- FanimeF --> 
-<addon id="plugin.video.fanimef" name="Fanime F" version="1.1.5" provider-name="fanimef">
+<addon id="plugin.video.fanimef" name="Fanime F" version="1.1.7" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
     <import addon="script.module.requests" />
