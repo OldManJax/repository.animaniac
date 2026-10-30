@@ -20,6 +20,65 @@
 </extension>
 </addon>
 
+<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.7">
+    <requires>
+        
+    </requires>
+    <extension point="xbmc.addon.repository">
+        <dir>
+            <info>http://127.0.0.1:65223/addons.xml</info>
+            <checksum>http://127.0.0.1:65223/addons.xml.md5</checksum>
+            <datadir>http://127.0.0.1:65223/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>See https://github.com/ElementumOrg/repository.elementumorg/blob/master/LICENSE</license>
+        <source>https://github.com/ElementumOrg/repository.elementumorg</source>
+        <summary lang="en">GitHub virtual Add-on repository</summary>
+        <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
+        <news>
+- Allow running in standalone mode
+- Migrate to GitHub API
+- Add support for "tag_pattern" field
+- Add support for private repositories by supplying a "token"
+- Try to automatically determine zip ref from version
+- Multiple minor improvements
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.onepacepremium" version="2.4.8" name="One Pace Addon" provider-name="6ip">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+        <import addon="xbmc.metadata" version="2.1.0" />
+        <import addon="script.module.requests" version="2.31.0" />
+        <import addon="plugin.video.elementum" version="0.0.7" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">One Pace version of One Piece</summary>
+        <description lang="en_GB">One Pace is a fan-made recut project that edits the official One Piece anime to match the pacing of the original manga more closely. It cuts out non-canon filler, extended auras/beam clashes, and repetitive reactions. Shorter and faster, it condenses multiple original episodes into streamlined blocks, saving dozens (or hundreds) of hours across heavy arcs like Dressrosa and Wano.[CR]Watch One Pace in Kodi through your debrid service or peer to peer as configured via the settings and the onepace website.[CR]If using a peer-to-peer setup, it's aways recommended you use a VPN.</description>
+        <disclaimer lang="en">https://github.com/6ip/onepace-premium-kodi</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot00000.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot00001.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot00002.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <!-- Toonami --> 
 <addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
   <requires>
@@ -46,7 +105,7 @@
   </extension>
 </addon>
 
-<!-- FanimeF --> 
+<!-- FanimeF 
 <addon id="plugin.video.fanimef" name="Fanime F" version="1.1.8" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
@@ -68,7 +127,7 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
-</addon>
+</addon>--> 
 
 <!-- WatchNixToons2 -->    
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.24" provider-name="WNT2">
