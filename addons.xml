@@ -53,7 +53,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.onepacepremium" version="2.4.8" name="One Pace Addon" provider-name="6ip">
+<addon id="plugin.video.onepacepremium" version="2.4.9" name="One Pace Addon" provider-name="6ip">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="xbmc.metadata" version="2.1.0" />
@@ -67,7 +67,6 @@
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en_GB">One Pace version of One Piece</summary>
         <description lang="en_GB">One Pace is a fan-made recut project that edits the official One Piece anime to match the pacing of the original manga more closely. It cuts out non-canon filler, extended auras/beam clashes, and repetitive reactions. Shorter and faster, it condenses multiple original episodes into streamlined blocks, saving dozens (or hundreds) of hours across heavy arcs like Dressrosa and Wano.[CR]Watch One Pace in Kodi through your debrid service or peer to peer as configured via the settings and the onepace website.[CR]If using a peer-to-peer setup, it's aways recommended you use a VPN.</description>
-        <disclaimer lang="en">https://github.com/6ip/onepace-premium-kodi</disclaimer>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
