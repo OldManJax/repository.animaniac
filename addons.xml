@@ -104,8 +104,8 @@
   </extension>
 </addon>
 
-<!-- FanimeF 
-<addon id="plugin.video.fanimef" name="Fanime F" version="1.1.8" provider-name="fanimef">
+<!-- FanimeF -->
+<addon id="plugin.video.fanimef" name="Fanime F" version="1.2.0" provider-name="fanimef">
   <requires>
     <import addon="script.module.simplejson"/>
     <import addon="script.module.requests" />
@@ -126,7 +126,7 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
-</addon>--> 
+</addon>
 
 <!-- WatchNixToons2 -->    
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.24" provider-name="WNT2">
